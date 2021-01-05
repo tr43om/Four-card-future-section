@@ -1,0 +1,101 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "Poppins", serif;
+    padding: 4.5em 0;
+    background-color: hsl(0, 0%, 98%); 
+}
+
+.about {
+    &__header {
+        text-align: center;
+        width: 30%;
+        margin: 0 auto;
+        margin-bottom: 180px;
+    }
+ 
+    &__title {
+        margin-bottom: 30px;
+        font-weight: 200;
+        font-size: 36px;
+        .u-bold {
+            font-weight: 700;
+        }
+    }
+
+    &__description {
+
+        font-size: 16px;
+        color: hsl(229, 6%, 66%);
+    }
+
+    &__composition {
+        position: relative;
+        width: 48em;
+        height: 17em;
+        margin: 0 auto;
+    }
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 5px;
+    width: 21em;
+    height: 15em;
+    box-shadow: 0 5px 25px -10px hsl(234, 12%, 34%);
+
+    &__title {
+        font-weight: 700;
+        padding: 25px;
+    }
+
+    &__text {
+        font-size: 14px;
+        color: hsl(229, 6%, 66%);
+        padding-left: 25px;
+        padding-right: 30px;
+    }
+
+    &__icon {
+        float: right;
+        padding: 15px
+    }
+
+    &--supervisor {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 0;
+        border-top: 4px solid hsl(180, 62%, 55%);
+    }
+
+    &--team{
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 0;
+        left: 50%;
+        border-top: 4px solid hsl(0, 78%, 62%);
+    }
+
+    &--karma{
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 100%;
+        left: 50%;
+        border-top: 4px solid hsl(34, 97%, 64%);
+    }
+
+    &--calculator{
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 100%;
+        border-top: 4px solid hsl(212, 86%, 64%);
+    }
+}
